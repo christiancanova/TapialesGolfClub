@@ -1,0 +1,536 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+text-shadow: none;
+box-sizing: border-box;
+}
+.bodyindex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 30px 650px 1fr;
+    gap: 0px 0px;
+    height: 1200px;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "nav nav nav nav"
+    "seccion1 secion1 seccion2 seccion2"
+    "seccion3 seccion4 seccion5 seccion6"
+    ;
+    justify-content: center;
+    align-content: center;
+}
+.titulo{ 
+    grid-area: titulo;
+    color: #F0F0D8;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 85px; 
+    letter-spacing: 7px;
+    background-image: url(../IMAGENES/fondotitulo.jpg);
+    background-size: 100%;
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;     
+}
+.nav{ 
+    grid-area: nav;
+    background-color: #607848;
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;  
+}    
+li{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif; 
+    margin-right: 25px;
+}
+a{ 
+    color:whitesmoke;
+}
+a:hover{ 
+    color: #C0D860;
+}
+.botonactivo{
+    color: #C0D860;
+} 
+.seccion1{ 
+    grid-area:seccion1;
+    background-image: url(../IMAGENES/imagenfondo1.jpg);
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.seccion2{
+    grid-area:seccion2;
+    display: flex;
+    align-items: center;
+    color: #604848; 
+    text-align: center;
+    font-size: 40px; 
+    font-style: italic;
+    margin-right: 100px;
+    background-color: white;
+    background: linear-gradient(to right, transparent, white 50%);
+}
+.seccion3{
+    grid-area:seccion3;
+    display: flex;
+    align-items: center;
+    color: #F0F0D8;
+    text-align: center;
+    font-size: 25px; 
+    filter:alpha (opacity=0.7);
+    background-color: #607848;
+    padding: 15px;
+}
+.seccion4{
+    grid-area:seccion4;
+    display: flex;
+    align-items: center;
+    color: #F0F0D8;
+    text-align: center;
+    font-size: 25px; 
+    filter:alpha (opacity=0.7);
+    background-color: #604848; 
+    padding: 15px;
+}
+.seccion5{
+    grid-area:seccion5;
+    display: flex;
+    align-items: center;
+    color: #F0F0D8;
+    justify-content: center;
+    filter:alpha (opacity=0.7);
+    background-color: #607848; 
+}
+.top{   
+    width: 65%;
+    height: 50%;  
+}
+.seccion6{
+    grid-area:seccion6;
+    display: flex;
+    align-items: center;
+    color: #F0F0D8;
+    text-align: center;
+    font-size: 25px; 
+    filter:alpha (opacity=0.7);
+    background-color: #604848; 
+    padding: 15px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    color: #604848;
+    justify-content: center;
+    font-size: 16px;  
+    word-spacing: 3px;
+    width: 100%;
+    height: 30px;
+    filter:alpha(opacity=0.8);
+    -moz-opacity:0.8;
+    opacity:0.8;
+}
+.paginalacancha{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 30px 573px;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "nav nav nav nav"
+    "lacancha lacancha video video"
+    ;
+    justify-content: center;
+    align-content: center;
+}
+.lacancha{
+    grid-area:lacancha;
+    display: flex;
+    align-items: center;
+    color: #604848; 
+    text-align: center;
+    font-size: 25px; 
+    font-style: italic;
+    background-color: #F0F0D8;
+    padding: 20px;   
+}
+.video{
+    grid-area:video;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px; 
+    font-style: italic;
+    padding: 20px;
+    background-color: #604848;
+    color: #F0F0D8;
+    row-gap: 15px;   
+}
+.paginahistoria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 30px 573px;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "nav nav nav nav"
+    "historia historia historia historia"
+    ;
+    justify-content: center;
+    align-content: center;
+}
+.historia{
+    grid-area:historia;
+    display: flex;
+    align-items: center;
+    color: #604848; 
+    text-align: center;
+    font-size: 30px; 
+    font-style: italic;
+    background-color: #F0F0D8;
+    padding: 60px;    
+}
+.paginacomollegar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 30px 573px;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "nav nav nav nav"
+    "comollegar comollegar mapa mapa"
+    ;
+    justify-content: center;
+    align-content: center;
+}
+.comollegar{
+    grid-area:comollegar;
+    display: flex;
+    align-items: center;
+    color: #604848; 
+    text-align: center;
+    font-size: 30px; 
+    font-style: italic;
+    background-color: #F0F0D8;
+    padding: 20px;     
+}
+.mapa{
+    grid-area:mapa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; 
+    font-style: italic;
+    padding: 20px;
+    background-color: #604848;
+    color: #F0F0D8;
+    row-gap: 15px;
+}
+.paginacontacto{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 30px 573px;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "nav nav nav nav"
+    "contacto contacto contacto contacto"
+    ;
+    justify-content: center;
+    align-content: center;
+}
+.contacto{
+    grid-area:contacto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; 
+    font-style: italic;
+    background-color: #604848;
+    color: #F0F0D8;
+    row-gap: 15px;
+}
+.formulario{
+    color: #F0F0D8;
+    text-align:center;
+    font-size: 25px; 
+    width: 410px;
+    height: 470px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-style: italic;
+    justify-content: center; 
+    align-items: baseline;
+
+}  
+label{
+    display: block;
+    margin: 10px;
+} 
+@media only screen and (max-width: 1000px) 
+{
+    .bodyindex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px 30px 500px 1fr;
+        gap: 0px 0px;
+        height: 900px;
+    } 
+    .titulo{
+        font-size: 40px; 
+    } 
+    .nav{ 
+        font-size: 15px;
+    } 
+    .seccion1{
+        background-image: url(../IMAGENES/imagenfondo1.jpg);
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .seccion2{
+        font-size: 40px; 
+        grid-area:seccion1;
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        margin:0%;
+        align-items:flex-end;
+        color: #604848; 
+        padding: 25px;
+        background: linear-gradient(to bottom, transparent, white 80%);   
+    }   
+    .seccion3{
+        font-size: 15px; 
+    }
+    .seccion4{
+        font-size: 15px; 
+    }
+    .seccion5{
+        font-size: 15px;
+    }
+    .top{     
+        width:32,5%;
+        height: 25%;
+    }
+    .seccion6{
+        font-size: 15px; 
+    }
+    footer{
+        font-size: 10px; 
+    }
+    .youtube{
+        width: 65%;
+        height: 40%;
+    } 
+    .lacancha{
+        font-size: 20px ;
+    } 
+    h4{
+        font-size: 13px;
+    } 
+    .paginalacancha{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px 30px 550px;
+        gap: 0px 0px;
+        height: 660px;      
+    }
+    .historia{
+        font-size: 25px; 
+    }  
+    .comollegar{
+        font-size: 20px;       
+    }
+    .gmap{
+        width: 75%;
+        height: 75%;
+    } 
+    .paginacomollegar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px 30px 573px;
+    } 
+    .paginacontacto{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px 30px 573px;       
+    }
+    .formulario{  
+        font-size: 20px; 
+        width: 400px;
+        height: 450px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-style: italic;
+        justify-content: center; 
+    }  
+    label{
+        display: block;
+        margin: 8px;   
+    } 
+} 
+@media only screen and (max-width: 600px) {
+    .bodyindex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px 100px 280px 1fr 1fr;
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "nav nav nav nav"
+        "seccion1 secion1 seccion2 seccion2"
+        "seccion3 seccion3 seccion6 seccion6"
+        "seccion4 seccion4 seccion5 seccion5";
+        gap: 0px 0px;
+        height: 900px;
+    } 
+    .titulo{
+        font-size: 18px; 
+    } 
+    .nav{ 
+        display:flex;
+        justify-content: flex-start;
+        font-size: 15px;
+        text-align: left;
+        padding-left: 20px;
+        height: 100px;
+    }    
+    li{
+        display:list-item;
+        font-family: 'Roboto Condensed', sans-serif; 
+        margin-right:0%;
+    } 
+    .seccion1{
+        background-image: none;
+        background-color: #F0F0D8;      
+    }
+    .seccion2{
+        font-size: 25px; 
+        grid-area:seccion1;
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        margin:0%;
+        align-items:center;
+        color: #604848; 
+        padding: 25px;  
+    }   
+    .seccion3{
+        font-size: 15px; 
+    }
+    .seccion4{
+        font-size: 15px; 
+    }
+    .seccion5{
+        font-size: 15px; 
+    }
+    .top{      
+        width:32,5%;
+        height: 25%;
+    }
+    .seccion6{
+        font-size: 15px; 
+    }
+    footer{
+        font-size: 8px; 
+        padding: 5px;
+        text-align: center;
+    }
+    .paginalacancha{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px 100px 200px 360px;
+        gap: 0px 0px;
+        height: 700px;
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "nav nav nav nav"
+        "lacancha lacancha lacancha lacancha"
+        "video video video video";      
+    }
+    .lacancha{
+        grid-area:lacancha;
+        display: flex;
+        align-items: center;
+        color: #604848; 
+        text-align: center;
+        font-size: 12px; 
+        font-style: italic;
+        background-color: #F0F0D8;
+        padding: 20px;     
+    }  
+    .video {
+        grid-area:video;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px; 
+        font-style: italic;
+        padding: 20px;
+        background-color: #604848;
+        color: #F0F0D8;
+        row-gap: 15px;
+    }    
+    .youtube{
+        width: 80%;
+        height: 60%;   
+    }
+    .paginahistoria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px 100px 573px;    
+    }
+    .historia{
+        font-size: 16px; 
+    }  
+    .paginacomollegar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px 100px 180px 573px;
+        gap: 0px 0px;
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "nav nav nav nav"
+        "comollegar comollegar comollegar comollegar"
+        "mapa mapa mapa mapa"
+        ;
+        justify-content: center;
+        align-content: center;
+    }
+    .paginacontacto{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px 100px 573px;    
+    }
+    .contacto{           
+        font-size: 30px; 
+    }
+    .formulario{        
+        font-size: 20px; 
+        width: 308px;
+        height: 450px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-style: italic;          
+    }      
+    label{          
+        margin: 8px;
+        align-items: center;     
+    }    
+} 
