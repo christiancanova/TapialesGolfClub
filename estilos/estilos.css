@@ -60,8 +60,12 @@ a:hover{
 }
 .botonactivo{
     color: #C0D860;
+}
+.animate__animated{
+    --animate-duration: 2s;
+    animation-delay: 0.8s;
 } 
-.seccion1{ 
+.seccion1{
     grid-area:seccion1;
     background-image: url(../IMAGENES/imagenfondo1.jpg);
     display: flex;
