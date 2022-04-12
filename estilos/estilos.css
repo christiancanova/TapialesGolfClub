@@ -299,14 +299,21 @@ label{
         margin: 8px;   
     } 
 } 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 575px) {
     .titulo{
         font-size: 16px; 
         height: 40px;
     } 
     .nav{ 
-        height: 44px;
-        font-size: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 55px;
+        font-size: 11px;
+        align-content:space-between;
+        align-items: center;
+        justify-content:center;
+        background-color: transparent;
+
     }    
     .seccion2{
         font-size: 8px; 
