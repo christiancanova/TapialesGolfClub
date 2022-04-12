@@ -13,28 +13,51 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     </head>
     <body>
-        <div class="paginahistoria">  
-            <div class="titulo"> <h1"> TAPIALES GOLF CLUB </h1></div>
-            <div class="nav">
-                <nav>
-                    <ul>
-                        <li><a  href="../index.html">INICIO</a></li>
-                        <li><a  href="./lacancha.html">LA CANCHA</a></li>
-                        <li><a class="botonactivo" href="./historia.html">HISTORIA DEL CLUB</a></li>
-                        <li><a href="./comollegar.html">COMO LLEGAR</a></li>
-                        <li><a href="./contacto.html">CONTACTO</a></li>
-                    </ul>    
+        <div class="container-fluid paginahistoria">  
+            <div class="row titulo0">   
+                <p class="col-12 titulo">TAPIALES GOLF CLUB</p>    
+            </div>
+            <div class="row nav">
+                <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #F0F0D8 color">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>                                  
+                    <div class="collapse navbar-collapse" style="background-color: #F0F0D8"  id="opciones">   
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a type="button" class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./lacancha.html">LA CANCHA</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="./historia.html">HISTORIA DEL CLUB</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./comollegar.html">COMO LLEGAR</a>
+                        </li>     
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>          
+                      </ul>
+                    </div>
                 </nav>
             </div>
-            <div class="historia">
+            <div class="row historia">
                 <p>El TAPIALES GOLF CLUB nace el 24 de abril 1985, tras una reunión de seis alumnos guanelianos y un maestro, congregada en el antiguo colegio San Luis Gonzaga, próximo a la zona en la cual se encuentra el campo de golf. El 29 de enero de 1988 se inaugura el campo de golf con un torneo y posterior asado en la casa de Don Luis, contigua a la cancha. En 2003, 15 años tarde, se completan los 18 hoyos, con la dirección del Ing. Claudio Canova, diseñador también de los trazados de las canchas del Club Náutico Ramos Mejía, y Lomas del Mirador Golf Club Argentino entre otras. El Club adquiere su mayoría de edad cuando se firman las escrituras a favor de la Institución, en el año 2005, por lo que el predio de 63 Has. pasa a pertenecer al TAPIALES GOLF CLUB (entidad sin fines de lucro).
                 </p>
             </div>          
         </div>      
-        <footer>
-            <p> Tuyutí 1385  - (1770) | Tapiales - Buenos Aires - Argentina | Tel: (5411) 4652-8264 | © 2022. Todos los derechos reservados.</p>
+        <footer class="row">
+            <p class="col-12 footer"> Tuyutí 1385  - (1770) | Tapiales - Buenos Aires - Argentina | Tel: (5411) 4652-8264 | © 2022. Todos los derechos reservados.</p>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>      
     </body>
 </html>
