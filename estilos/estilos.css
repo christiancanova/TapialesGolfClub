@@ -23,23 +23,25 @@ box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }  
-.nav{ 
+.nav-item{ 
     background-color: #F0F0D8;
     height: 54px;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;   
     justify-content: center;
     align-items: center;  
-    align-content: center;    
-}    
-li{
-    display: inline-block;
-    position: relative;
-    align-items: center;
-    list-style: none;
+    align-content: center; 
+} 
+.bloque{ 
+    display: flex;
+    align-items: center;  
+    align-content: flex-start; 
+    justify-content: center;
+    text-align: center;
+}  
+li{   
     font-family: 'Roboto Condensed', sans-serif; 
-    margin-right: 10px;
-    margin-left: 10px;   
+    
 }
 /* Formato sin bootstrap
 .nav-link{
@@ -316,7 +318,7 @@ label{
 
     }    
     .seccion2{
-        font-size: 8px; 
+        font-size: 10px; 
         display: flex;
         margin:0%;
         align-items:center;
@@ -381,6 +383,8 @@ label{
     }
     .contacto{           
         font-size: 30px; 
+    
+
     }
     .formulario{        
         font-size: 20px; 
