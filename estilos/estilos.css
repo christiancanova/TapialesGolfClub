@@ -37,7 +37,7 @@ box-sizing: border-box;
     align-items: center;  
     align-content: flex-start; 
     justify-content: center;
-    text-align: center;
+    text-align: center;   
 }  
 li{   
     font-family: 'Roboto Condensed', sans-serif; 
@@ -214,6 +214,7 @@ h4 {
     height:675px ;
 }
 .formulario{
+    display: flex;
     color: #F0F0D8;
     text-align:center;
     font-size: 20px; 
@@ -223,20 +224,32 @@ h4 {
     margin-bottom: 50px;
     font-style: italic;
     justify-content: center; 
-    align-items: baseline;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
 }  
 label{
-    display: block;
-    margin: 10px;
+    
+    margin: 15px;
 } 
+
 @media only screen and (max-width: 1000px) 
 {
     .titulo{
         font-size: 40px; 
     } 
     .nav{ 
-        font-size: 17px;
+        font-size: 14px;
         height: 45px;
+    } 
+    .nav-item{ 
+        background-color: #F0F0D8;
+        height: 30px;
+        font-size: 14px;
+        display: flex;   
+        justify-content: center;
+        align-items: center;  
+        align-content: center; 
     } 
     li{
         margin: 1px;   
@@ -296,27 +309,42 @@ label{
         font-style: italic;
         justify-content: center; 
     }  
-    label{
-        display: block;
-        margin: 8px;   
-    } 
+    
 } 
 @media only screen and (max-width: 575px) {
     .titulo{
-        font-size: 16px; 
-        height: 40px;
+        font-size: 15px; 
+        height: 60px;
     } 
     .nav{ 
         display: flex;
         flex-direction: column-reverse;
-        height: 55px;
+        height: 30px;
         font-size: 11px;
         align-content:space-between;
-        align-items: center;
-        justify-content:center;
+        align-items: left;
+        justify-content:flex-start;
         background-color: transparent;
 
     }    
+    .nav-item{ 
+        background-color: #F0F0D8;
+        height: 20px;
+        font-size: 12px;
+        display: flex;   
+        justify-content:flex-start;
+        align-items: left;  
+        align-content:flex-start; 
+    } 
+
+    .bloque{ 
+        display: flex;
+        align-items:flex-start;  
+        align-content: flex-start; 
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }  
     .seccion2{
         font-size: 10px; 
         display: flex;
