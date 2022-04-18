@@ -103,6 +103,29 @@ li{
 .top{   
     width: 50%;
     height: 30%;  
+    animation-duration: 10s;
+    animation-name: imagen;
+    animation-iteration-count:infinite;
+    
+     
+}
+
+@keyframes imagen {
+    
+    20% {
+        filter: hue-rotate(90deg);
+    }
+    60%{
+        filter: hue-rotate(-0.25turn);
+    }
+    80% {
+        filter: hue-rotate(3.142rad);;
+    }
+    100% {
+    filter: hue-rotate(0);
+}
+
+
 }
 .seccion6{
     display: flex;
@@ -177,6 +200,8 @@ h4 {
 }
 .comollegar{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     color: #F0F0D8; 
     text-align: center;
@@ -197,6 +222,24 @@ h4 {
     color: #F0F0D8;
     row-gap: 15px;
 }
+
+.efecto{
+    animation-duration: 3s;
+    animation-name: texto;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+     
+}
+
+@keyframes texto {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .paginacontacto{
     justify-content: center;
     align-content: center;
@@ -385,7 +428,7 @@ label{
         font-size: 12px; 
         padding: 20px; 
         height: 300px;    
-    }  
+    }      
     .video {
         display: flex;
         flex-direction: column;
