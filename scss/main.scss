@@ -1,0 +1,146 @@
+@import "variables";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    text-shadow: none;
+    box-sizing: border-box;
+    }
+    #margin
+    {
+    margin: 0%;
+    padding: 0%;  
+    }
+    .titulo0{
+        background-image: url(../IMAGENES/fondotitulo.jpg);
+        display: flex;   
+        justify-content: center;
+        align-items: center;  
+    }
+    .titulo{ 
+        color: $colorPrincipal;
+        font-family: 'EB Garamond', serif;
+        font-family: 'Philosopher', sans-serif;
+        font-size: 80px; 
+        letter-spacing: 7px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+    }  
+    .nav-item{ 
+        background-color: $colorPrincipal;
+        height: 54px;
+        font-size: 20px;
+        display: flex;   
+        justify-content: center;
+        align-items: center;  
+        align-content: center; 
+    } 
+    .bloque{ 
+        display: flex;
+        align-items: center;  
+        align-content: flex-start; 
+        justify-content: center;
+        text-align: center;  
+    }     
+    li{   
+        font-family: 'Roboto Condensed', sans-serif;        
+    } 
+    .footer{
+        display: flex;
+        align-items: center;
+        color: $colorSecundario;
+        justify-content: center;
+        font-size: 16px;  
+        word-spacing: 3px;
+        filter:alpha(opacity=0.8);
+        -moz-opacity:0.8;
+        opacity:0.8;
+    }
+    .paginahistoria{
+        justify-content: center;
+        align-content: center;
+    }
+    .historia{
+        display: flex;
+        align-items: center;
+        color: $colorPrincipal; 
+        text-align: center;
+        font-size: 30px; 
+        font-style: italic;
+        background-color: $colorTerciario;
+        padding: 60px;    
+    }
+    @media only screen and (max-width: 1000px) 
+    {
+        .titulo{
+            font-size: 40px; 
+        } 
+        .nav{ 
+            font-size: 14px;
+            height: 45px;
+        } 
+        .nav-item{ 
+            background-color: $colorPrincipal;
+            height: 30px;
+            font-size: 14px;
+            display: flex;   
+            justify-content: center;
+            align-items: center;  
+            align-content: center; 
+        } 
+        li{
+            margin: 1px;   
+        }   
+        .footer{
+            font-size: 10px; 
+        }
+        
+        .historia{
+            font-size: 25px; 
+        }     
+    } 
+    @media only screen and (max-width: 575px) {
+        .titulo{
+            font-size: 15px; 
+            height: 60px;
+        } 
+        .nav{ 
+            display: flex;
+            flex-direction: column-reverse;
+            height: 30px;
+            font-size: 11px;
+            align-content:space-between;
+            align-items: left;
+            justify-content:flex-start;
+            background-color: transparent;
+        }    
+        .nav-item{ 
+            background-color: $colorPrincipal;
+            height: 20px;
+            font-size: 12px;
+            display: flex;   
+            justify-content:flex-start;
+            align-items: left;  
+            align-content:flex-start; 
+        } 
+        .bloque{ 
+            display: flex;
+            align-items:flex-start;  
+            align-content: flex-start; 
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+        }  
+        .footer{
+            font-size: 8px; 
+            padding: 5px;
+            text-align: center;
+        }
+        .historia{
+            font-size: 16px; 
+        }  
+    }
