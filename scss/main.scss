@@ -1,32 +1,42 @@
 @import "variables";
 
+$estilos: (
+    text-align: center,
+    font-size: 30px,
+    font-style: italic, 
+);
+@mixin sizes ($margin, $padding) {
+    margin:$margin;
+    padding:$padding;
+    
+}
+
+
 *{
-    margin: 0%;
-    padding: 0%;
+    @include sizes(0%,0%);
     text-decoration: none;
     text-shadow: none;
     box-sizing: border-box;
     }
     #margin
     {
-    margin: 0%;
-    padding: 0%;  
+    @include sizes(0%,0%); 
     }
     .titulo0{
         background-image: url(../IMAGENES/fondotitulo.jpg);
+        background-size:cover;
         display: flex;   
         justify-content: center;
         align-items: center;  
     }
     .titulo{ 
+        @extend .titulo0;
+        background-image: none;
         color: $colorPrincipal;
         font-family: 'EB Garamond', serif;
         font-family: 'Philosopher', sans-serif;
         font-size: 80px; 
         letter-spacing: 7px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
         margin: 0%;
         padding: 0%;
     }  
@@ -68,9 +78,9 @@
         display: flex;
         align-items: center;
         color: $colorPrincipal; 
-        text-align: center;
-        font-size: 30px; 
-        font-style: italic;
+        text-align: map-get($estilos,text-align);
+        font-size: map-get($estilos,font-size);
+        font-style: map-get($estilos,font-style);
         background-color: $colorTerciario;
         padding: 60px;    
     }

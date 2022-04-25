@@ -9,21 +9,20 @@
   margin: 0%;
   padding: 0%; }
 
-.titulo0 {
+.titulo0, .titulo {
   background-image: url(../IMAGENES/fondotitulo.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .titulo {
+  background-image: none;
   color: #F0F0D8;
   font-family: 'EB Garamond', serif;
   font-family: 'Philosopher', sans-serif;
   font-size: 80px;
   letter-spacing: 7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0%;
   padding: 0%; }
 
