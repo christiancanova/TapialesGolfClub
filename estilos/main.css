@@ -25,7 +25,10 @@
   font-size: 80px;
   letter-spacing: 7px;
   margin: 0%;
-  padding: 0%; }
+  padding: 0%;
+  filter: alpha(opacity=0.9);
+  -moz-opacity: 0.9;
+  opacity: 0.9; }
 
 .nav-item {
   background-color: #F0F0D8;
@@ -83,7 +86,10 @@ li {
   font-size: 25px;
   filter: alpha opacity=0.7;
   background-color: #607848;
-  padding: 15px; }
+  padding: 15px;
+  flex-direction: column; }
+  .seccion3 .texto {
+    font-size: 0.8em; }
 
 .seccion4 {
   display: flex;
@@ -93,21 +99,26 @@ li {
   font-size: 25px;
   filter: alpha opacity=0.7;
   background-color: #604848;
-  padding: 15px; }
+  padding: 15px;
+  flex-direction: column; }
+  .seccion4 .texto {
+    font-size: 0.8em; }
 
 .seccion5 {
   display: flex;
   align-items: center;
   color: #F0F0D8;
   justify-content: center;
-  filter: alpha opacity=0.7;
   background-color: #607848;
   padding: 0px; }
 
 #top {
   animation-duration: 10s;
   animation-name: imagen;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  filter: alpha(opacity=0.8);
+  -moz-opacity: 0.8;
+  opacity: 0.8; }
 
 @keyframes imagen {
   20% {
@@ -127,7 +138,10 @@ li {
   font-size: 25px;
   filter: alpha opacity=0.7;
   background-color: #604848;
-  padding: 15px; }
+  padding: 15px;
+  flex-direction: column; }
+  .seccion6 .texto {
+    font-size: 0.8em; }
 
 /*PAGINA HISTORIA*/
 .paginahistoria {
@@ -139,12 +153,36 @@ li {
   align-items: center;
   color: #F0F0D8;
   text-align: center;
-  font-size: 30px;
+  font-size: 22px;
   font-style: italic;
-  background-color: #607848; }
-
-.historiatexto {
-  padding: 30px; }
+  background-color: #607848;
+  flex-direction: column;
+  padding: 15px; }
+  .historia hr {
+    height: 1.5px;
+    width: 100%;
+    background-color: #05030314; }
+  .historia .historiatexto1 {
+    font-size: 0.9em;
+    filter: alpha(opacity=0.9);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    --animate-duration: 1.2s;
+    animation-delay: 0.2s; }
+  .historia .historiatexto2 {
+    font-size: 0.9em;
+    filter: alpha(opacity=0.9);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    --animate-duration: 1.2s;
+    animation-delay: 0.5s; }
+  .historia .historiatexto3 {
+    font-size: 0.9em;
+    filter: alpha(opacity=0.9);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    --animate-duration: 1.2s;
+    animation-delay: 0.8s; }
 
 /*PAGINA LA CANCHA*/
 .paginalacancha {
@@ -155,13 +193,31 @@ li {
 .lacancha {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #F0F0D8;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-style: italic;
   background-color: #607848;
   padding: 20px;
-  height: 500px; }
+  height: 500px;
+  flex-direction: column; }
+  .lacancha hr {
+    height: 1.5px;
+    width: 100%;
+    background-color: #05030314; }
+  .lacancha .lacanchatexto {
+    filter: alpha(opacity=0.9);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    --animate-duration: 1.2s;
+    animation-delay: 0.2s; }
+  .lacancha .lacanchatexto2 {
+    filter: alpha(opacity=0.9);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    --animate-duration: 1.2s;
+    animation-delay: 0.5s; }
 
 .video {
   display: flex;
@@ -211,7 +267,9 @@ li {
   animation-duration: 3s;
   animation-name: texto;
   animation-iteration-count: infinite;
-  animation-delay: 2s; }
+  animation-delay: 2s;
+  font-size: 1.3em;
+  padding: 5%; }
 
 @keyframes texto {
   0% {
@@ -234,7 +292,7 @@ li {
   background-color: #604848;
   color: #F0F0D8;
   row-gap: 15px;
-  height: 675px; }
+  height: 520px; }
 
 .formulario {
   display: flex;
@@ -269,7 +327,7 @@ label {
     height: 45px; }
   .nav-item {
     height: 30px;
-    font-size: 14px; }
+    font-size: 16px; }
   li {
     margin: 1px; }
   .footer {
@@ -279,40 +337,44 @@ label {
     font-size: 17px;
     height: 250px; }
   .seccion3 {
-    font-size: 15px; }
+    font-size: 20px; }
   .seccion4 {
-    font-size: 15px; }
+    font-size: 20px; }
   .seccion5 {
-    font-size: 15px; }
+    font-size: 20px; }
   .seccion6 {
-    font-size: 15px; }
+    font-size: 20px; }
   /*PAGINA LA CANCHA*/
   .youtube {
     width: 65%;
     height: 40%; }
   .lacancha {
+    font-size: 18px; }
+    .lacancha h4 {
+      font-size: 20px; }
+  .video h4 {
     font-size: 20px; }
-  h4 {
-    font-size: 13px; }
   /*PAGINA HISTORIA*/
   .historia {
-    font-size: 25px; }
+    font-size: 20px; }
   /*PAGINA COMO LLEGAR*/
   .comollegar {
     font-size: 20px; }
   .gmap {
-    width: 75%;
-    height: 75%; }
+    width: 100%;
+    height: 100%; }
   /*PAGINA CONTACTO*/
   .formulario {
     width: 400px;
     height: 450px;
-    text-decoration: none; } }
+    text-decoration: none; }
+  .contacto {
+    height: 500px; } }
 
 @media only screen and (max-width: 575px) {
   /*ESTRUCTURA COMPARTIDA*/
   .titulo {
-    font-size: 15px;
+    font-size: 25px;
     height: 60px; }
   .nav {
     display: flex;
@@ -324,8 +386,8 @@ label {
     justify-content: flex-start;
     background-color: transparent; }
   .nav-item {
-    height: 20px;
-    font-size: 12px;
+    height: 30px;
+    font-size: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: left;
@@ -343,20 +405,20 @@ label {
     text-align: center; }
   /*INDEX*/
   .seccion2 {
-    font-size: 10px;
+    font-size: 13px;
     display: flex;
     margin: 0%;
     align-items: center;
-    align-content: flex-end;
-    height: 175px; }
+    align-content: space-around;
+    height: 215px; }
   /*PAGINA LA CANCHA*/
   .paginalacancha {
     gap: 0px 0px; }
   .lacancha {
-    font-size: 12px;
-    height: 300px; }
+    font-size: 17px;
+    height: 500px; }
   .video {
-    height: 300px; }
+    height: 400px; }
   .youtube {
     width: 80%;
     height: 60%; }
@@ -376,3 +438,11 @@ label {
   label {
     margin: 8px;
     align-items: center; } }
+
+@media only screen and (max-width: 575px) and (max-width: 410px) {
+  .titulo {
+    font-size: 16px; }
+  .seccion2 {
+    font-size: 10px; }
+  .lacancha {
+    font-size: 15px; } }
